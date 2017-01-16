@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js').
+  script(src='https://code.jquery.com/jquery-3.1.1.min.js').
+  script(src='/js/main.js').
+  div(style='width: 90%')
+    canvas#myChart(width='400', height='400').
